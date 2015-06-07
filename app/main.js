@@ -8,7 +8,8 @@ require.config({
    "angular":"//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min",
    "app":"app/app",
    "script":"resources/script/script",
-   "domReady":"resources/vendor/requirejs/domready"
+   "domReady":"resources/vendor/requirejs/domready",
+   "controller":"app/controller"
  },
  shim:{
   "jqueryUi":{
@@ -21,12 +22,12 @@ require.config({
    "deps":["jquery"]
   },
   "app":{
-    "deps":["jquery","bootstrap","angular"]
+    "deps":["jquery","bootstrap","angular",]
   }
  }
 });
 
-require(['domReady','app'],function(domReady){
+require(['domReady','app',"controller/MainController"],function(domReady){
    domReady(function(){
     angular.element(document).ready(function() {
       angular.bootstrap(document, ['Indiwale']);

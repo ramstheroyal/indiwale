@@ -1,0 +1,30 @@
+html,body{
+ width:100%;
+ height:100%;
+}
+body{
+ font-size:13px;
+}
+.rr-main-container{
+ padding:0px;
+}
+.rr-view-container{
+ padding-top:75px;
+}
+.rr-header,.rr-footer,.rr-view-container{
+ margin:0px;
+}
+.rr-header{
+ background-color:rgb(59, 222, 186);
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+ z-index:9999;
+}
+.rr-footer{
+ text-align:right;
+ background-color:rgb(240, 240, 240);
+ color:#B1B1B1;
+ padding:5px 0px;
+}
