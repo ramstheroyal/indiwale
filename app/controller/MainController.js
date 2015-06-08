@@ -3,12 +3,14 @@ define(['app'],function(app){
     $scope.message = "Welcome!";
 
   angular.element($window).bind('scroll',function(){
+    var width = '';
+    var margin ='24px';
     if(window.scrollY > 30){
-     $('.rr-header img.logo').css({'width':'100px'});
-    }else{
-     $('.rr-header img.logo').css({'width':''});
+        width = '100px';
+        margin = '0px';
     }
-    //console.log('scrolling');
+    $('.rr-header img.logo').css({'width':width});
+    $('.rr-header .rr-nav-list').css({'margin-top':margin});
   });
 
   });
